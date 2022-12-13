@@ -119,14 +119,40 @@ header nav ul .c_text_menu:hover {
 
 section {
     display: flex;
+    flex-direction:column;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    height: 50rem;
+    justify-content: center;
+    width: 100%;
+    min-height: 50rem;
     margin: 0 auto;
     margin-top: 25rem;
 }
 
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.row p{
+    width:50%;
+}
+
+#imageRow1{
+    background-image: url("./images/myImageMatrix.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 512px;
+    width: 512px;
+    border-radius:50%;
+}
+#imageRow2{
+    background-image: url("./images/MyImageRow2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 512px;
+    width: 512px;
+    border-radius:50%;
+}
 section div p {
     font-size: 2.5rem;
 
