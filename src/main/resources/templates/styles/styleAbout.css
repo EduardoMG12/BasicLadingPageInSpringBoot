@@ -1,0 +1,133 @@
+:root {
+    --font-color: #9C9C9C;
+    --header-color: #1B1B1B;
+    --background-color-black: #080808;
+    --background-color-white: rgb(194, 174, 174);
+    --font-default: 'Anek Telugu', sans-serif;
+}
+
+body {
+    background-color: var(--background-color-black);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+header nav {
+    display: flex;
+    width: 80vw;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0 3rem;
+}
+
+header nav ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li a {
+    font-size: 2rem;
+    font-family: var(--font-default);
+    text-transform: capitalize;
+    letter-spacing: 0.13rem;
+    color: var(--font-color);
+    transition: all 0.3s;
+}
+
+header nav ul li .text_menu:hover {
+    border-bottom: 1px solid var(--font-color);
+}
+
+header nav ul .c_text_menu:hover {
+    transform: scale(1.2);
+}
+
+.icons_midias_social {
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.icons_midias_social li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons_midias_social li:hover {
+    transform: scale(1.2);
+}
+
+.icons_midias_social li a {
+    font-size: 4rem;
+}
+
+.fa-linkedin-in {
+    color: var(--font-color);
+    transition: 0.7s ease-in-out;
+}
+
+.fa-linkedin-in:hover {
+    color: #0961B8;
+
+}
+
+.fa-whatsapp {
+    color: var(--font-color);
+}
+
+.fa-whatsapp:hover {
+    color: #3FDC5B;
+    transition: 0.7s ease-in-out;
+}
+
+.fa-github {
+    color: var(--font-color);
+    transition: 0.7s ease-in-out;
+}
+
+.fa-github:hover {
+    color: rgb(255, 255, 255)
+}
+
+
+.logos_social_midias .icon_logo {
+    font-size: 2.5rem;
+}
+
+.logos_social_midias .icon_logo:hover {
+    transform: scale(1)
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 50rem;
+    margin: 0 auto;
+    margin-top: 25rem;
+}
+
+section div p {
+    font-size: 2.5rem;
+
+}

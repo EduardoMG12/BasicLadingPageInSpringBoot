@@ -1,0 +1,235 @@
+:root {
+    --font-color: #9C9C9C;
+    --header-color: #1B1B1B;
+    --background-color-black: #080808;
+    --background-color-white: rgb(194, 174, 174);
+    --font-default: 'Anek Telugu', sans-serif;
+}
+
+
+body {
+    background-color: var(--background-color-black);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+header nav {
+    display: flex;
+    width: 80vw;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0 3rem;
+}
+
+header nav ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li a {
+    font-size: 2rem;
+    font-family: var(--font-default);
+    text-transform: capitalize;
+    letter-spacing: 0.13rem;
+    color: var(--font-color);
+    transition: all 0.3s;
+}
+
+header nav ul li .text_menu:hover {
+    border-bottom: 1px solid var(--font-color);
+}
+
+header nav ul .c_text_menu:hover {
+    transform: scale(1.2);
+}
+
+.icons_midias_social {
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.icons_midias_social li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons_midias_social li:hover {
+    transform: scale(1.2);
+}
+
+.icons_midias_social li a {
+    font-size: 4rem;
+}
+
+.fa-linkedin-in {
+    color: var(--font-color);
+    transition: 0.7s ease-in-out;
+}
+
+.fa-linkedin-in:hover {
+    color: #0961B8;
+
+}
+
+.fa-whatsapp {
+    color: var(--font-color);
+}
+
+.fa-whatsapp:hover {
+    color: #3FDC5B;
+    transition: 0.7s ease-in-out;
+}
+
+.fa-github {
+    color: var(--font-color);
+    transition: 0.7s ease-in-out;
+}
+
+.fa-github:hover {
+    color: rgb(255, 255, 255)
+}
+
+
+.logos_social_midias .icon_logo {
+    font-size: 2.5rem;
+}
+
+.logos_social_midias .icon_logo:hover {
+    transform: scale(1)
+}
+
+
+.about {
+    min-height: 90vh;
+    width: 90vw;
+    margin: 10rem auto;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.about .c_myimg {
+    background-image: url(../images/smoking\ sem\ fundo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    height: 66rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .c_myimg .animation_myimg {
+    width: 66.5rem;
+    height: 66.5rem;
+}
+
+.about .c_about_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+
+.about_text {
+    width: 70rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about .c_about_text .about_text h1 {
+    font-size: 4rem;
+    color: wheat;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.1rem;
+}
+
+.about .c_about_text .about_text p {
+    line-height: 3rem;
+    font-size: 2rem;
+    color: wheat;
+}
+
+.about_2 {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.about_2 .s_c_myimg img {
+    border-radius: 30px;
+}
+
+.about_2 .s_c_myimg img:hover {}
+
+
+/* @media (max-width:1600px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+        margin-top: 10rem;
+    }
+
+    .about .c_myimg {
+        width: 900px;
+    }
+}
+
+@media (max-width:750px) {
+  
+    header{
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        gap: 3rem;
+    }
+    header nav ul li a{
+    font-size: 4rem;
+    }
+    .about .c_myimg {
+        width: 900px;
+    }
+}
+@media (max-width:450px) {
+    header nav ul{
+        display: none;
+    }
+    header .icons_midias_social{
+        justify-content: center;
+        
+    }
+    .about{
+        margin:  0 auto;
+    }
+    .about .c_myimg, .about .c_myimg img{
+        transform: scale(0.60);
+    }
+} */
