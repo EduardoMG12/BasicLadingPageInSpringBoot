@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="landing-page-eduardo-m/src/main/resources/templates/styles/style.css" />
-  <link rel="stylesheet" href="landing-page-eduardo-m/src/main/resources/templates/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="landing-page-eduardo-m/src/main/resources/templates/styles/scrollbar.css">
+  <link rel="stylesheet" href="/styles/scrollbar.css">
   <title>Charles Eduardo Landing Page</title>
 </head>
 
@@ -19,8 +19,8 @@
     <header>
       <nav>
         <ul>
-          <li class="c_text_menu"><a href="/index.html" class="text_menu">Home</a></li>
-          <li class="c_text_menu"><a href="/about.html" class="text_menu">About</a></li>
+          <li class="c_text_menu"><a th:href="@{/}" class="text_menu">Home</a></li>
+          <li class="c_text_menu"><a th:href="@{about}" class="text_menu">About</a></li>
           <li class="c_text_menu"><a href="https://my-page-bbhtxl4sw-eduardomg12.vercel.app" target="_blank"
               class="text_menu">Portfolio</a></li>
         </ul>
@@ -55,7 +55,7 @@
       </div>
     </section>
     <section class="about_2">
-      <div class="s_c_myimg"><img src="../images/eu.jpg" alt="" srcset=""></div>
+      <div class="s_c_myimg"><img src="styles/images/eu.jpg" alt="" srcset=""></div>
     </section>
 
   </main>
