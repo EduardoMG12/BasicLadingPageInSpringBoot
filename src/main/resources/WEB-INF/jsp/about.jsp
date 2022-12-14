@@ -39,8 +39,7 @@
     <section>
         <div class="row" id="row1">
             <div class="myImage" id="imageRow1"></div>
-            <p id="row1Message">
-            </p>
+            <p id="row1Message"><%=age%></p>
         </div>
         <div class="row" id="row2">
             <p>
