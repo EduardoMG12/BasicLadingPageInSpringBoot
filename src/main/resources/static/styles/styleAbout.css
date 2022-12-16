@@ -157,3 +157,17 @@ section div p {
     font-size: 2.5rem;
 
 }
+@media (max-width:1250px){
+
+    .row{
+        justify-content: center;
+        gap: 4rem;
+    }
+    #row1{
+        flex-direction: column;
+    }
+    #row2{
+        flex-direction: column-reverse;
+    }
+
+}

@@ -11,7 +11,7 @@ public class HomeController {
     @GetMapping("/")
     public ModelAndView index(){
         var modelAndView = new ModelAndView();
-        modelAndView.setViewName("index.jsp");
+        modelAndView.setViewName("index.html");
         return modelAndView;
     }
 

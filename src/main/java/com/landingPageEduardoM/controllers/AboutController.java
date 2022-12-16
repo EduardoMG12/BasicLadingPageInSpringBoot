@@ -12,14 +12,16 @@ import java.time.ZoneOffset;
 @Controller
 public class AboutController {
 
-    @GetMapping("about")
+    @GetMapping("/about")
     public ModelAndView about(){
         var now = LocalDate.now(ZoneOffset.UTC);
         var bornDate = LocalDate.of(2002,11,12);
-        var age = Period.between(now, bornDate).getYears();
-        var modelAndView = new ModelAndView();
+        var age = Period.between(bornDate, now).getYears();
+        var modelAndView = new ModelAndView("about");
         modelAndView.addObject("age", age);
-        modelAndView.setViewName("about.jsp");
+        modelAndView.setViewName("about");
+        System.out.println(modelAndView);
+        System.out.println(age);
         return modelAndView;
     }
 }
