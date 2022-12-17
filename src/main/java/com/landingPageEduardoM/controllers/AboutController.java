@@ -19,9 +19,6 @@ public class AboutController {
         var age = Period.between(bornDate, now).getYears();
         var modelAndView = new ModelAndView("about");
         modelAndView.addObject("age", age);
-        modelAndView.setViewName("about");
-        System.out.println(modelAndView);
-        System.out.println(age);
         return modelAndView;
     }
 }

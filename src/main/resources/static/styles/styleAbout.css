@@ -133,7 +133,7 @@ section {
     justify-content: space-around;
     align-items:center;
 }
-.row p{
+.row > p{
     width:50%;
 }
 
@@ -153,7 +153,7 @@ section {
     width: 512px;
     border-radius:50%;
 }
-section div p {
+section div p, section div span {
     font-size: 2.5rem;
 
 }
